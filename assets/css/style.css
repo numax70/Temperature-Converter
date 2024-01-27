@@ -1,0 +1,7 @@
+body{background:#a5c1e4;}
+h2{letter-spacing: 0.1em;}
+main>:first-child>:first-child>:only-child>:only-child{color:#a5c1e4}
+.column-degree{box-shadow:2px 2px 2px 0px #7b7e89; background:rgb(231, 231, 231);color:#568bcb;}
+.column-degree>:last-child{min-height:300px;}
+.button-group button{background:#568bcb; font-size:0.8em;}
+.column-temperature{box-shadow:2px 2px 2px 0px #7b7e89;background:#568bcb;color:#ffffff; min-width:320px;}
