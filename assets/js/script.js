@@ -7,18 +7,18 @@ window.addEventListener('load', ()=>{
 });
 
 eventHandler=()=>{
-    let btnConvert=document.getElementById('convert');
+    btnConvert=document.getElementById('convert');
     btnConvert.addEventListener('click', controlInput);
 }
 /*---Control input and call callReading function or get error--*/
 controlInput=()=>{
-    let getTemperature=document.getElementById('degree').value;
+    getTemperature=document.getElementById('degree').value;
     getTemperature!=='' ? callReading(getTemperature) : error.innerHTML='Wrong Lettur!', degree.focus() ;
 }
 /*-----------Get the reading and call the relevant function----*/
 callReading=(getTemperature)=>{
-    let conversioneDegree=document.getElementById('conversion_degree');
-    let conversioneType=document.getElementById('conversion_type'); 
+    conversioneDegree=document.getElementById('conversion_degree');
+    conversioneType=document.getElementById('conversion_type'); 
     conversioneDegree.value==='celsius' && conversioneType.value === 'fahrenheit'
      ? fahrenheitConversion(getTemperature) : conversioneDegree.value==='fahrenheit' && conversioneType.value === 'celsius'
         ? celsiusConversion(getTemperature) : error.innerHTML="Not Conversion"; 
