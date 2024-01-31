@@ -1,4 +1,4 @@
-temperatureReading,error;
+let temperatureReading,error;
 
 window.addEventListener('load', ()=>{
     temperatureReading=document.getElementById('temperature_reading');
